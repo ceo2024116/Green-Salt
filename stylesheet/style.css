@@ -1,0 +1,611 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.green{
+    padding: 10px 30px;
+}
+.green .navbar{
+    padding: 0px 20px 20px;
+    border-bottom: 2px solid white;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 10;
+    background-color: #043732;
+}
+.green .navbar .logo{
+    background-image: url("./images/logo\ nav\ bar.png");
+    width: 150px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.green .navbar .navlink{
+    margin-top: 20px;
+}
+.green .navbar .navlink a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+.green .navbar .navlink a:hover{
+    color: #BC9841;
+}
+.green .navbar .navlink a:focus{
+    color: #BC9841;
+}
+@media screen and (max-width: 768px) {
+    .green .navbar .navlink a{
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .green .navbar{
+        display: block;
+    }
+    .green .navbar .logo{
+        justify-self: center;
+    }
+    .green .navbar .navlink{
+        display: none;
+    }
+
+}
+
+.green .flex1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 50px 0px;
+}
+.green .flex1 .health{
+    color: #043732;
+    align-self: center;
+    font-size: 50px;
+}
+.green i{
+    color: #BC9841;
+}
+.green .flex1 .pic{
+    background-image: url("./images/grren_leaf-removebg-preview.png");
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+    .green .flex1 .health{
+        font-size: 30px
+    }
+    .green .flex1 .pic{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .green .flex1{
+        padding: 10px 0px;
+    }
+    .green .flex1 .health{
+        font-size: 15px
+    }
+    .green .flex1 .pic{
+        background-size: contain;
+        width: 200px;
+        height: 25vh;
+    }
+}
+
+.green .pic2{
+    background-image: linear-gradient(360deg, rgba(24, 22, 22, 0.445), rgba(0, 0, 0, 0.651)) ,url("./images/grassland-434721_1280.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+} 
+.green .pic2 .text{
+    text-align: center;
+    color: white;
+    padding: 50px 300px;
+    font-size: 20px;
+}
+@media screen and (max-width: 1024px) { 
+    .green .pic2 .text{
+        padding: 10px 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .green .pic2{
+        height: 300px;
+    }
+    .green .pic2 .text{
+        padding: 0px 50px;
+        position: absolute;
+        top: 320px;
+        font-size: large;
+    }
+}
+@media screen and (max-width: 767px) {
+    .green .pic2 .text{
+        padding: 20px 40px;
+        font-size: 10px;
+        top: 290px;
+        left: 0;
+    }
+}
+
+.green .flex2{
+    display: flex;
+    gap: 200px;
+    padding: 0px 50px;
+}
+.green .flex2 .flip .pic{
+    background-image: linear-gradient(360deg, rgba(24, 22, 22, 0.911), rgba(0, 0, 0, 0.39)), url("./images/gettyimages-916222952-170667a.jpg");
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    outline: 2px solid #043732;
+    background-size: cover;
+    position: relative;
+    top: 50px;
+    z-index: -1;
+}
+.green .flex2 .flip .picture{
+    background-image: url("./images/gettyimages-1182918122-170667a.jpg");
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    outline: 2px solid #043732;
+    position: absolute;
+    left: 280px;
+    background-size: cover;
+    background-position: center;
+}
+.green .flex2 .flip .text{
+    color: #BC9841;
+    padding: 0px 10px;
+}
+.green .flex2 .flip .text h2{
+    font-weight: bolder;
+}
+.green .flex2 .text .big{
+    color: #BC9841;
+    margin-top: 50px;
+}
+.green .flex2 .text .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.green .flex2 .text .grid .bold{
+    font-size: larger;
+    color: #043732;
+}
+.green .flex2 .text .grid .orange{
+    color: #BC9841;
+    font-weight: bold;
+    font-size: 20px;
+}
+.green .flex2 .text .grid p{
+    color: #043732;
+}
+@media screen and (max-width: 1024px) {
+    .green .flex2{
+        gap: 120px;
+    }
+    .green .flex2 .flip{
+        align-self: center;
+    }
+    .green .flex2 .text .grid{
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .green .flex2{
+        display: block;
+    }
+    .green .flex2 .flip .pic{
+        width: 100%;
+    }
+    .green .flex2 .flip .picture{
+        left: 600px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .green .flex2{
+        padding: 0px;
+    }
+    .green .flex2 .flip .pic{
+        width: 100%;
+        height: 30vh;
+    }
+    .green .flex2 .flip .picture{
+        left: 270px;
+        width: 100px;
+        height: 100px;
+    }
+    .green .flex2 .text .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.green .grid2{
+    display: grid;
+    grid-template-columns: 300px 300px 1fr;
+    color: #043732;
+    padding: 50px;
+}
+.green .grid2 .text{
+    align-self: center;
+}
+.green .grid2 .image{
+    background-image: url("./images/IMG-20241116-WA0165-removebg-preview.png");
+    width: 100%;
+    height: 30vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.green .grid2 .heart span{
+    color: #BC9841;
+    font-weight: bolder;
+}
+@media screen and (max-width: 1024px) {
+    .green .grid2{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 0px;
+    }
+    .green .grid2 .image{
+        margin-top: 20px;
+        align-self: center;
+    }
+    .green .grid2 .text{
+        justify-self: center;
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .green .grid2 .heart{
+        align-self: center;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .green .grid2 .image{
+        display: none;
+    }
+    .green .grid2 .heart{
+        grid-row: 1/3;
+        grid-column: 1/3;
+        margin-top: 100px;
+    }
+}
+
+.green .flex4{
+    color: #043732;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 0px 50px;
+}
+.green .flex4 .flexcontent h2{
+    color: #BC9841;
+    font-weight: bolder;
+}
+.green .flex4 .flexcontent .pic1{
+    background-image: url("./images/Screenshot__37_-removebg-preview.png");
+    width: 100%;
+    height: 10vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.green .flex4 .flexcontent .pic2{
+    background-image: url("./images/pics-removebg-preview.png");
+    width: 100%;
+    height: 10vh;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.green .flex4 .flexcontent .pic3{
+    background-image: url("./images/opay-removebg-preview.png");
+    width: 100%;
+    height: 10vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+    .green .flex4{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .green .flex4{
+        padding: 0px;
+    }
+}
+
+.green .grid3{
+    color: #043732;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    padding: 100px 0px;
+}
+.green .grid3 .pic{
+    background-image: url("./images/cooking-951950_1280.jpg");
+    width: 100%;
+    align-self: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.green .grid3 .text{
+    align-self: center;
+}
+.green .grid3 .text span{
+    color: #BC9841;
+    font-size: 20px;
+    font-weight: 900;
+}
+.green .grid3 button{
+    margin-left: 500px;
+    margin-top: -50px;
+    background-color: #BC9841;
+}
+.green .grid3 .line{
+    border: 1px solid #BC9841;
+}
+@media screen and (max-width: 1024px) {
+    .green .grid3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .green .grid3 .pic{
+        height: 30vh;
+    }
+    .green .grid3 button{
+        margin-left: 800px;
+        margin-top: -40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .green .grid3 button{
+        margin-left: 600px;
+        margin-top: -50px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .green .grid3 button{
+        margin-left: 300px;
+    }
+}
+
+.green .green{
+    color: #043732;
+    text-align: center;
+}
+.green .grid4{
+    color: #043732;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 0px;
+    gap: 70px;
+}
+.green .grid4 h2{
+    color: #BC9841;
+    margin-top: 20px
+}
+.green .grid4 .cook .pic{
+    background-image: url("./images/cooking-1835369_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+}
+.green .grid4 .bake .pic{
+    background-image: url("./images/christmas-5850470_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+}
+.green .grid4 .touch .pic{
+    background-image: url("./images/salad-5904093_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+}
+.green .grid4 .meals .pic{
+    background-image: url("./images/food-1050813_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+}
+@media screen and (max-width: 1024px) {
+    .green .grid4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 767px) {
+    .green .grid4{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.green .img{
+    background-image: url("./images/comma-removebg-preview.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5vh;
+    width: 100%;
+}
+.green .carousel-indicators button{
+    background-color: #043732;
+}
+.green .carousel-inner{
+    padding: 10px 0px;
+}
+.green .color{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100%;
+}
+.green .carousel-item h3{
+    color: #043732;
+}
+.green .carousel-item h6{
+    color: #BC9841;
+    font-weight: 900;
+}
+.green .carousel-control-prev span{
+    background-color: #043732;
+}
+.green .carousel-control-next span{
+    background-color: #043732;
+}
+@media screen and (max-width: 767px) {
+    .green .carousel-item h3{
+        font-size: small;
+    }
+}
+
+.green .pictext{
+    padding: 50px 0px;
+    color: white;
+    text-align: center;
+}
+.green .pictext .watermark{
+    background-image: linear-gradient(360deg, rgba(24, 22, 22, 0.555), rgba(0, 0, 0, 0.575)), url("./images/green\ salt.jpg");
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.green .pictext .watermark .text{
+    padding: 200px 150px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.green .pictext .watermark .text button{
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #BC9841;
+    color: white;
+    font-size: 25px;
+}
+.green .pictext .watermark .text button:focus{
+    border: none;
+    outline: none;
+}
+.green .pictext .watermark .text button:hover{
+    background-color: transparent;
+    outline: 3px solid #BC9841;
+}
+@media screen and (max-width: 1024px) {
+    .green .pictext .watermark{
+        height: 35vh;
+    }
+    .green .pictext .watermark .text{
+        padding: 100px 50px;
+        font-size: 30px;
+    }
+    .green .pictext .watermark .text button{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .green .pictext .watermark .text{
+        padding: 100px 10px;
+        margin-top: -100px;
+        font-size: 20px;
+    }
+    .green .pictext .watermark .text button{
+        font-size: 20px;
+        padding: 15px 15px 0 ;
+    }
+}
+@media screen and (max-width: 767px){
+    .green .pictext .watermark{
+        height: 50vh;
+    }
+    .green .pictext .watermark .text{
+        font-size: 15px;
+        padding: 100px 10px;
+    }
+    .green .pictext .watermark .text button{
+        font-size: 15px;
+        padding: 10px 10px 0 
+    }
+}
+
+.grid5{
+    background-color: #042826;
+    color: white;
+    padding: 50px 100px;
+}
+.grid5 .content{
+    display: grid;
+    grid-template-columns: 200px 1fr 300px  ;
+    gap: 50px;
+}
+.grid5 .content h2{
+    color: #BC9841;
+}
+.grid5 .content .link a{
+    color: white;
+    text-decoration: none;
+}
+.grid5 .content .link a:hover{
+    color: #BC9841;
+}
+.grid5 .content .join .icon {
+    word-spacing: 10px;
+}
+.grid5 .content .join .icon span{
+    color: white;
+    font-size: 20px;
+}
+.grid5 .content .join .icon span:hover{
+    color: #BC9841;
+}
+.grid5 .font h6{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+@media screen and (max-width: 1024px) {
+    .grid5 .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 767px) {
+    .grid5{
+        padding: 50px;
+    }
+}
